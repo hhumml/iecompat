@@ -1,0 +1,105 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>IE compatibility view test</title>
+<meta http-equiv="content-type" content="text/html; CHARSET=utf-8" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en" />
+<meta name="author" content="" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="styles/demo.css" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="styles/floatz-1.3.0/floatz.liquid.ie-lte6.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="styles/floatz-1.3.0/floatz.liquid.ie-7.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="styles/floatz-1.3.0/floatz.liquid.ie-8.css" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="styles/floatz-1.3.0/floatz.liquid.ie-9.css" />
+<![endif]-->
+<script type="text/javascript" src="styles/floatz-1.3.0/scripts/LAB-2.0.3.min.js"></script>
+<script type="text/javascript" src="scripts/demo.js"></script>
+</head>
+<body>
+  <div id="flz_page">
+    <div class="flz_box flz_spacer header">
+        <h1>IE compatibility mode test suite</h1>
+    </div>
+    <div class="flz_box flz_l33 flz_lspacer">
+      <div class="flz_vmenu">
+        <ul>
+          <li><a href="index.html">No X-UA tag</a></li>
+          <li class="flz_selected"><a href="index2.html">Conditional X-UA tag</a></li>
+          <li><a href="index3.html">X-UA tag as first in head tag</a></li>
+          <li><a href="index4.html">Conditional X-UA tag as first in head tag</a></li>
+          <li><a href="index5.html">X-UA tag on any position in head tag</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flz_box flz_r66 flz_rspacer">
+      <div class="flz_box flz_spacer">
+        <p>
+          How to test this page:
+        </p>
+        <ol>
+          <li>Switch IE to compatibility mode</li>
+          <li>Restart the page</li>
+        </ol>
+        <p>
+          Tested solution: X-UA tag is used as conditional comment at the top of the page.
+        </p>
+        <pre>
+    <b>&lt;!--[if IE]&gt;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;&lt;![endif]--&gt;</b>
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+       &lt;title&gt;IE compatibility view test&lt;/title&gt;
+       ...
+    &lt;/head&gt;
+        </pre>
+        <p>
+          Expected behavior: IE 9 only switches into EDGE mode, all others fall back into IE 7 by default.
+        </p>
+      </div>
+      <div id="userAgent" class="flz_box flz_subspacer_mrsc_mid">    
+      </div>
+      <div id="docMode" class="flz_box flz_subspacer_mrsc_mid">
+      </div>  <div id="ie6" class="flz_box flz_subspacer_mrsc_mid">
+        IE6
+      </div>
+      <div id="ie7" class="flz_box flz_subspacer_mrsc_mid">
+        IE7
+      </div>
+      <div id="ie8" class="flz_box flz_subspacer_mrsc_mid">
+        IE8
+      </div>
+      <div id="ie9" class="flz_box flz_subspacer_mrsc_mid">
+        IE9
+      </div>
+      <div id="ie10" class="flz_box flz_subspacer_mrsc_mid">
+        IE10
+      </div>
+      <div id="ie11" class="flz_box flz_subspacer_mrsc_mid">
+        IE11
+      </div>
+      <div id="chrome" class="flz_box flz_subspacer_mrsc_mid">
+        Chrome
+      </div>
+      <div id="firefox" class="flz_box flz_subspacer_mrsc_mid">
+        Firefox
+      </div>
+      <div id="safari" class="flz_box flz_subspacer_mrsc_mid">
+        Safari
+      </div>
+       <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+    </div>
+</div>
+</body>
+</html>
